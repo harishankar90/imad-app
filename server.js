@@ -15,12 +15,12 @@ app.get('/article-one',function(req,res){
 });
 
 app.get('/article-two',function(req,res){
-   res.send('Article-2 is requested and will be server Here !.......So, Stay Tuned'); 
+    res.sendFile(path.join(__dirname, 'ui', 'article-2.html')); 
    
 });
 
 app.get('/article-three',function(req,res){
-   res.send('Article-3 is requested and will be server Here !.......So, Stay Tuned'); 
+    res.sendFile(path.join(__dirname, 'ui', 'article-3.html')); 
    
 });
 
