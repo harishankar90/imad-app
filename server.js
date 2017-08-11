@@ -11,14 +11,17 @@ app.get('/', function (req, res) {
 
 app.get('/article-one',function(req,res){
    res.send('Article-1 is requested and will be server Here !'); 
+   res.send('Dont go anywhere else.....Stay Tuned '); 
 });
 
 app.get('/article-two',function(req,res){
    res.send('Article-2 is requested and will be server Here !'); 
+   res.send('Dont go anywhere else.....Stay Tuned '); 
 });
 
 app.get('/article-three',function(req,res){
    res.send('Article-3 is requested and will be server Here !'); 
+   res.send('Dont go anywhere else.....Stay Tuned '); 
 });
 
 app.get('/ui/style.css', function (req, res) {
