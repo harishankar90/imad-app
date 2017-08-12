@@ -6,12 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 
-
-var ArticleOne={
-title : 'Article-1 | Harishnkar',
-heading: 'Article-1',
-date: 'August 11,2017',
-content : `<p>
+var articles = {
+    var articleOne: {
+     
+      title : 'Article-1 | Harishnkar',
+      heading: 'Article-1',
+      date: 'August 11,2017',
+      content : `<p>
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
@@ -30,6 +31,34 @@ content : `<p>
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
             </p>`
+    
+    },
+    var ArticleTwo : {
+         title : 'Article-1 | Harishnkar',
+      heading: 'Article-1',
+      date: 'August 11,2017',
+      content : `<p>
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+            </p>
+        </div>
+         <div>
+            <p>
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+            </p>
+        </div>
+         <div>
+            <p>
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
+            </p>`
+    },
+    var ArticleThree : {}
+
     
 };
 
