@@ -5,14 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var articles = {
-    var articleOne: {
-     
-      title : 'Article-1 | Harishnkar',
-      heading: 'Article-1',
-      date: 'August 11,2017',
-      content : `<p>
+var ArticleOne={
+title : 'Article-1 | Harishnkar',
+heading: 'Article-1',
+date: 'August 11,2017',
+content : `<p>
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
@@ -31,43 +28,8 @@ var articles = {
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
                 This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
             </p>`
-    
-    },
-    var ArticleTwo : {
-         title : 'Article-1 | Harishnkar',
-      heading: 'Article-1',
-      date: 'August 11,2017',
-      content : `<p>
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-            </p>
-        </div>
-         <div>
-            <p>
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-            </p>
-        </div>
-         <div>
-            <p>
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-                This is my Content for Article-1 ;)This is my Content for Article-1 ;)This is my Content for Article-1 ;)
-            </p>`
-    },
-    var ArticleThree : {}
-
     
 };
-
-function createTemplate (data) {
-    var title = data.title;
-    var date = data.date;
-    var heading = data.heading;
-    var content = data.content;
-}
 
 
 var htmlTemplate =`
@@ -99,16 +61,11 @@ var htmlTemplate =`
     </body>
 </html>
 
- ';
- 
-return htmlTemplate;
-
-}
-
+`;
 
 
 app.get('/', function (req, res) {
-  res.send(createTemplate(article-1));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
