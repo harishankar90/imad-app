@@ -1,16 +1,24 @@
-console.log('Loaded!');
-
-var element=document.getElementById('main-text');
-element.innerHTML = 'New value';
-
-var img = document.getElementById('madi');
-var marginLeft = 0;
-function moveRight() {
-    marginLeft = marginLeft + 10;
-    im.style.marginLeft = marginLeft + 'px';
-}
-img.onclick = function(){
+// counter code
+var button = document.getElementById('counter');
+var counter = 0;
+button.onclick = function () {
+    // make a request
+    var request = XMLHttpRequest();
     
-    var interval =setInterval(moveRight, 100);
+    // capture the request
+    request.onreadystatechenge = function() {
+        if (request.readyState === XMLHttpRequest.DONE){
+        
+        if (request.status === 200) {
+            var counter = request.responseText;
+        }
+        
+    }
+ };
    
+  // Make the request
+  request.open('GET', 'http://harishankar714.imad.hasura.io', true);
+  request.send(null);
+
+    
 };
