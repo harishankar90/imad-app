@@ -11,7 +11,7 @@ button.onclick = function () {
         
         if (request.status === 200) {
             var counter = request.responseText;
-            var span = documnet.getElemntById('count');
+            var span = document.getElementById('count');
             span.innerHTML = counter.toString();
         }
         
@@ -19,7 +19,7 @@ button.onclick = function () {
  };
    
   // Make the request
-  request.open('GET', 'http://harishankar714.imad.hasura.io', true);
+  request.open('GET', 'http://harishankar714.imad.hasura.io/counter', true);
   request.send(null);
 
     
