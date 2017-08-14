@@ -19,7 +19,7 @@ button.onclick = function () {
  };
    
   // Make the request
-  request.open('GET', 'http://harishankar714.imad.hasura.io/counter', true);
+  request.open('GET', 'http://harishankar714.imad.hasura-app.io/counter', true);
   request.send(null);
 
     
