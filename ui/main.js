@@ -3,7 +3,7 @@ var button = document.getElementById('counter');
 
 button.onclick = function () {
     // make a request
-    var request = XMLHttpRequest();
+    var request = new XMLHttpRequest();
     
     // capture the request
     request.onreadystatechenge = function() {
