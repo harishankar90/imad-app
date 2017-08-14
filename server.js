@@ -51,9 +51,9 @@ app.get('/counter', function (req,res) {
 });
 
 var names = [];
-app.get('submit-name'/:name, function (req,res) {
+app.get('/submit-name', function (req,res) {
     var name = req.query.name;
-    var = name;
+   
     names.push(name);
     res.send(JSON.stringify(names));
     
