@@ -71,7 +71,19 @@ app.get('/submit-name', function (req,res) {
     
 });
 
-   
+ var pool = new pool(config);
+ app.get('/test-db',function (req,res) {
+   pool.query.('SELECT * FROM test', function (err,result) {
+       if (err)
+       {
+           red.status(500).send(err.toString());
+       }
+       else{
+               res.send(JSON.stringify(result));
+           
+           }
+   });  
+ });
 
 
 app.get('/ui/style.css', function (req, res) {
